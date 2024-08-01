@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.cs-h {
+    min-height: 100vh;
+}
+
+.cs-w {
+    width: 35% !important;
+}
+
+.cs-s {
+    aspect-ratio: 1 / 1 !important;
+}
+
+.cs-br {
+    border-radius: 35px;
+}
+
+/*Background*/
+.cs-bg {
+    background-color: hsl(216, 12%, 8%) !important;
+}
+
+.cs-bg-2 {
+    background: linear-gradient(0deg, #1a212b, #222a34) !important;
+}
+
+.cs-bg-3 {
+    background-color: hsl(213, 19%, 18%) !important;
+}
+
+/*Text*/
+.cs-tc {
+    color: hsl(217, 12%, 63%) !important;
+}
+
+.cs-tc-2 {
+    color: hsl(25, 97%, 53%) !important;
+}
+
+/*Buttons*/
+.cs-btn {
+    background-color: hsl(213, 19%, 18%) !important;
+    transition: .3s;
+}
+
+.cs-btn:hover {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: hsl(216, 12%, 8%) !important;
+}
+
+.cs-btn.active {
+    background-color: white !important;
+    color: hsl(216, 12%, 8%) !important;
+}
+ .cs-btn-2 {
+    letter-spacing: 4px;
+    background-color: hsl(25, 97%, 53%) !important;
+    color: hsl(213, 19%, 18%) !important;
+    transition: .3s;
+ }
+
+ .cs-btn-2:hover {
+    background-color: white !important;
+ }
