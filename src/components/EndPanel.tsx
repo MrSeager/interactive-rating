@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import React, { FC } from 'react';
 import './InteractRating.css';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -20,7 +20,7 @@ interface textProp {
 }
 
 const EndPanel: FC<EndPanelProp> = ({ value }) => {
-    const textProp = {
+    const textProp: textProp = {
         head_2: 'You selected ' + value + ' out of 5',
         head_3: 'Thank you!',
         par_2: 'We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!'

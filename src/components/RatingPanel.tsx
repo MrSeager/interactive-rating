@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import React, { FC } from 'react';
 import './InteractRating.css';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -21,9 +21,9 @@ interface textProp {
 }
 
 const RatingPanel: FC<RatingPanelProps> = ({ value, setValue, setSubmit}) => {
-    const textProp = {
+    const textProp: textProp = {
         head_1: 'How did we do?',
-        par_1:'Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!'
+        par_1: 'Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!'
     }
 
     const handleChange = (val: number) => setValue(val);
@@ -48,7 +48,7 @@ const RatingPanel: FC<RatingPanelProps> = ({ value, setValue, setSubmit}) => {
                         checked={value === val}>{val}</ToggleButton>
                 ))}
             </ToggleButtonGroup>
-            <Button onClick={handleSubmit} className='py-3 w-100 rounded-pill mt-2 text-uppercase fw-bold border-0 cs-btn-2'>Submit</Button>
+            <Button disabled={isNaN(value)} onClick={handleSubmit} className='py-3 w-100 rounded-pill mt-2 text-uppercase fw-bold border-0 cs-btn-2'>Submit</Button>
         </Container>
     );
 };

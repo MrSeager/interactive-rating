@@ -67,3 +67,9 @@ body {
  .cs-btn-2:hover {
     background-color: white !important;
  }
+
+@media (max-width: 921px) {
+    .cs-w {
+        width: 95% !important;
+    }
+}

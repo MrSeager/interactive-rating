@@ -8,7 +8,7 @@ import RatingPanel from './RatingPanel.tsx';
 import EndPanel from './EndPanel.tsx';
 
 const InteractRating: FC = () => {
-    const [value, setValue] = useState<number>(1);
+    const [value, setValue] = useState<number>(NaN);
     const [submit, setSubmit] = useState<boolean>(false);
 
     return (
